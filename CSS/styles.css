@@ -1,0 +1,258 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* header-----------------------------------------------------*/
+
+header {
+  height: 100px;
+  line-height: 100px;
+  background-color: #87888c;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 40px;
+  float: left;
+  margin: 0;
+}
+header p {
+  font-size: 30px;
+  float: left;
+  padding-left: 20px;
+  display: inline;
+  margin: 0;
+}
+span {
+  font-weight: normal;
+}
+/* ------------------------------------------------------------- */
+
+/* section1----------------------------------------------------- */
+.section1 {
+  height: 510px;
+}
+.img-radius img {
+  border-radius: 50%;
+  float: left;
+}
+.content ul {
+  list-style: none;
+  float: left;
+}
+.content h1 {
+  font-size: 50px;
+}
+.content p {
+  font-size: 25px;
+}
+.clear {
+  clear: left;
+}
+/* ----------------------------------------------------------------- */
+
+/* section2---------------------------------------------------------------- */
+.section2 {
+  height: 510px;
+  background-color: #8aab74;
+}
+}
+.photo2 {
+  margin-top: 10px;
+}
+.font-size h1 {
+  font-size: 30px;
+}
+.font-size p {
+  font-size: 20px;
+}
+/* ^----------------------------------------------------------------- */
+
+/* footer------------------------------------------------------------- */
+footer {
+  height: 100px;
+  background-color: #bfa1bd;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  font-size: 30px;
+  margin: ;
+}
+time {
+  font-size: 30px;
+}
+footer h1 {
+  margin: 0;
+}
+/* ---------------------------------------------------------------------- */
+/* section3------------------------------------------------------------- */
+.section3 {
+  height: 600px;
+  background-color: #e39fc7
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #121fcc;
+  border-radius: 50%;
+  opacity: .1;
+}
+.circle:active {
+  transform: translate(100px,100px) scale(1.5);
+  opacity: 1;
+  transition: .4s;
+  transition-timing-function: ease;
+}
+.spin {
+  height: 100px;
+  width: 100px;
+  background-color: #121fcc;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin-top: 100px;
+}
+@keyframes spin {
+  0% {transform: none;}
+  100% {transform: rotate(360deg);}
+}
+/* --------------------------------------------------------------------------- */
+/* section4------------------------------------------------------------------ */
+.grid-box {
+  display: grid;
+  background-color: #7d797a;
+  height: 500px;
+  grid-template: 100px 100px 100px/ 100px 100px 100px;
+  grid-gap: 50px;
+}
+.box-1 {
+  background-color: hsl(300,80%,30%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-2 {
+  background-color: hsl(300,80%,40%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-3 {
+  background-color: hsl(300,80%,50%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-4 {
+  background-color: hsl(200,80%,30%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-5 {
+  background-color: hsl(200,80%,40%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-6 {
+  background-color: hsl(200,80%,50%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-7 {
+  background-color: hsl(100,80%,30%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-8 {
+  background-color: hsl(100,80%,40%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.box-9 {
+  background-color: hsl(100,80%,50%);
+  height: 100px;
+  width: 100px;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+/* ------------------------------------------------------------------------ */
+@media (max-width: 670px) {
+* {
+  float: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%
+}
+img {
+  height: auto;
+  width: 100%;
+}
+span {
+  display: none;
+}
+header p {
+  display: none;
+}
+.section1 h1 {
+  font-size: 30px;
+}
+.section1 p {
+  font-size: 20px;
+}
+.section2 {
+  padding-bottom: 50px;
+}
+footer h1 {
+  display: none;
+}
+time {
+  /* display: none;
+ */
+ font-size: 20px;
+ /* padding: 0 0 0 100px; */
+}
+footer {
+  flex-direction: column;
+  height: 40px;
+}
+footer p {
+  font-size: 20px;
+}
+}
